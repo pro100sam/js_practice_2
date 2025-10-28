@@ -5,6 +5,42 @@
 //     languages: ["en", "ru"],
 //   },
 // };
+// let result = { ...original };
+// function deepClone(obj) {
+//   for (let key in obj) {
+//     if (!Array.isArray(obj[key]) && typeof obj[key] === "object") {
+//       Object.assign(result[key], obj[key]);
+//       return deepClone(obj[key]);
+//     }
+//   }
+//   return result;
+// }
+
+// const copy = deepClone(original);
+
+// console.log(result);
+// console.log(original);
+
+// result.settings.theme = "light";
+// result.settings.languages.push("fr");
+
+// console.log(original.settings.theme); // "dark"
+// console.log(original.settings.languages); // ["en", "ru"]
+
+//
+//
+//
+//
+//
+//
+
+// const original = {
+//   name: "Alice",
+//   settings: {
+//     theme: "dark",
+//     languages: ["en", "ru"],
+//   },
+// };
 
 // function deepClone(obj) {
 //   if (Array.isArray(Object.values(obj))) {
