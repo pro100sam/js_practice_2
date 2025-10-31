@@ -1,11 +1,14 @@
-let createCounter = function (n, ar) {
+let ar = [];
+let createCounter = function (n) {
   return function () {
-    for (i = 0; i < ar.length; i++) {
-      console.log(n);
-      n++;
-    }
+    ar.push(n);
+    n++;
+    return ar;
   };
 };
-let array = ["call", "call", "call", "call"];
-let count = createCounter(50, array);
-count();
+
+let counter = createCounter(10);
+
+console.log(counter());
+console.log(counter());
+console.log(counter());

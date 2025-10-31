@@ -3,6 +3,7 @@ let result = [];
 
 function flat(arr, depth = 1) {
   if (depth === Infinity) return flatInfinity(arr);
+
   if (depth <= 0) return arr;
 
   result = arr.concat.apply([], arr);
@@ -20,6 +21,8 @@ function flatInfinity(arr) {
   return result;
 }
 
+console.log(flat(ar, 1));
+
 // console.log(
 //   flat(
 //     [1, 2, empty, empty, undefined, [3, 4, [5, 6, [7, 8, [9, 10]]]]],
@@ -27,4 +30,4 @@ function flatInfinity(arr) {
 //   )
 // );
 
-console.log([1, 2, empty, empty, undefined, [3, 4, [5, 6, [7, 8, [9, 10]]]]]);
+// console.log([1, 2, empty, empty, undefined, [3, 4, [5, 6, [7, 8, [9, 10]]]]]);
