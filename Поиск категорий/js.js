@@ -18,6 +18,7 @@ const categories = {
   ],
 };
 
+let result;
 function findCategory(name, tree) {
   if (Array.isArray(tree)) {
     for (let prop of tree) {
@@ -33,3 +34,5 @@ function findCategory(name, tree) {
   if (result === undefined) return null;
   return result;
 }
+
+console.log(findCategory("Laptops", categories));

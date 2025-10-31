@@ -3,17 +3,17 @@ let Pete = {
   name: "Pete",
   email: "pete@gmail.com",
 };
-let Anna = {
+let Ann = {
   id: 2,
-  name: "Anna",
-  email: "anna@gmail.com",
+  name: "Ann",
+  email: "ann@gmail.com",
 };
 let Sam = {
   id: 3,
   name: "Sam",
   email: "sam@gmail.com",
 };
-let users = [Pete, Anna, Sam];
+let users = [Pete, Ann, Sam];
 
 function findUserById(users, id) {
   for (let user of users) {
@@ -21,3 +21,5 @@ function findUserById(users, id) {
   }
   return null;
 }
+
+console.log(findUserById(users, 3));

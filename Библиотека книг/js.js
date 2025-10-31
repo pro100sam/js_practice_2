@@ -14,7 +14,7 @@ let wonder = {
   title: "wonder",
   author: "Sam",
   genres: "novel",
-  isRead: true,
+  isRead: false,
 };
 
 let books = [alphabet, rain, wonder];
@@ -26,9 +26,12 @@ function getBooksByGenre(genre) {
 
 function markAsRead(title) {
   for (let prop of books) {
-    // for (let prop in obj) {
     if (prop.title === title) {
       prop.isRead = true;
     }
   }
 }
+
+console.log(getBooksByGenre("novel"));
+markAsRead("rain");
+console.log(rain.isRead);

@@ -8,3 +8,5 @@ function getTotalSalary(obj) {
   let result = Object.values(salaries).reduce((ac, item) => ac + item);
   return result;
 }
+
+console.log(getTotalSalary(salaries));

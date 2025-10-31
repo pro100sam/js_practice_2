@@ -27,3 +27,4 @@ function countByCategory(products) {
 
   return result;
 }
+console.log(countByCategory(products));
